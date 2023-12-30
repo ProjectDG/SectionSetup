@@ -30,9 +30,9 @@ class Item{
   // Service Well Top Rack Left
   let pureesTRL = new Item("SWTRLP", "Purées", ["Coconut Purée", "Strawberry Purée", "Mango Purée", "Black Cherry Purée", "Olive Juice"]);
   let jiggerTRL = new Item("SWTRLJ", "Jigger", ["Jiggers must be used when preparing all menu drinks to ensure accuracy."]);
-  let altMixer1TRL = new Item("SWTRLT1", "Alt. Mixer #1", ["Using alternate mixing tins can help expedite the time required to complete service well tickets. For example, using one mixing tin exclusively for standard margaritas is less likely to impact the taste from one drink to another. However, if the same tin is used for a spicy drink, it may lead to the next non-spicy drink being sent back. Allocating separate tins for spicy drinks or those with muddled ingredients can be reused for similar drinks, reducing the need to rinse your tins as often."]);
-  let altMixer2TRL = new Item("SWTRLT2", "Alt. Mixer #2", ["Using alternate mixing tins can help expedite the time required to complete service well tickets. For example, using one mixing tin exclusively for standard margaritas is less likely to impact the taste from one drink to another. However, if the same tin is used for a spicy drink, it may lead to the next non-spicy drink being sent back. Allocating separate tins for spicy drinks or those with muddled ingredients can be reused for similar drinks, reducing the need to rinse your tins as often."]);
-  let altMixer3TRL = new Item("SWTRLT3", "Alt. Mixer #3", ["Using alternate mixing tins can help expedite the time required to complete service well tickets. For example, using one mixing tin exclusively for standard margaritas is less likely to impact the taste from one drink to another. However, if the same tin is used for a spicy drink, it may lead to the next non-spicy drink being sent back. Allocating separate tins for spicy drinks or those with muddled ingredients can be reused for similar drinks, reducing the need to rinse your tins as often."]);
+  let altMixer1TRL = new Item("SWTRLT1", "Alt. Mixer #1", ["Spicy Drinks Mixer", "Using alternate mixing tins can help expedite the time required to complete service well tickets. For example, using one mixing tin exclusively for standard margaritas is less likely to impact the taste from one drink to another. However, if the same tin is used for a spicy drink, it may lead to the next non-spicy drink being sent back. Allocating separate tins for spicy drinks or those with muddled ingredients can be reused for similar drinks, reducing the need to rinse your tins as often."]);
+  let altMixer2TRL = new Item("SWTRLT2", "Alt. Mixer #2", ["Strawberry Basil Mixer", "Using alternate mixing tins can help expedite the time required to complete service well tickets. For example, using one mixing tin exclusively for standard margaritas is less likely to impact the taste from one drink to another. However, if the same tin is used for a spicy drink, it may lead to the next non-spicy drink being sent back. Allocating separate tins for spicy drinks or those with muddled ingredients can be reused for similar drinks, reducing the need to rinse your tins as often."]);
+  let altMixer3TRL = new Item("SWTRLT3", "Alt. Mixer #3", ["Mezcal Mixer", "Using alternate mixing tins can help expedite the time required to complete service well tickets. For example, using one mixing tin exclusively for standard margaritas is less likely to impact the taste from one drink to another. However, if the same tin is used for a spicy drink, it may lead to the next non-spicy drink being sent back. Allocating separate tins for spicy drinks or those with muddled ingredients can be reused for similar drinks, reducing the need to rinse your tins as often."]);
 
   // Service Well Top Rack Right
   let mainMixerTRR = new Item("SWTRRMT", "Main Mixer", ["Used for mixing most of the drinks ordered."]);
@@ -61,6 +61,12 @@ class Item{
 
 
   // 400 Well ------------------------------------------------------------------------------------------------------------------------------------------------
+  let toolsW4M = new Item("W4MAMT", "Tools & etc.", ["Agave", "Olive Juice", "Coconut Purée", "Strainers", "Muddler", "Stir Spoon", "Peeler", "Alt. Mixers"]);
+  let leftSideMixersW4M = new Item("W4MLSM", "Left Side Mixers", ["Simple Syrup", "Orange Juice", "Cranberry Juice"]);
+  let rightSideMixersW4M = new Item("W4MRSM", "Right Side Mixers", ["Sour Mix", "Lime Juice", "Rocco's Lime Mix"]);
+  let pureesW4M = new Item("W4MP", "Purées", ["Strawberry", "Mango", "Black Cherry", "Prickly Pear", "Passion Fruit"]);
+  let muddleGarnishW4M = new Item("W4MMG", "Muddle Garnish", ["Strawberries", "Basil", "Jalapenos", "Mint"]);
+  let limesW4M = new Item("W4ML", "Limes", ["Make sure limes are fresh and rotated when necessary."]);
   let topRowW4M = new Item("W4MSRTR", "Speed Rack Top Row", ["Rocco Mango Batch", "Hornitos Anejo", "Dos Hombres Joven", "J. F. Hayden Citrus", " Teremana Blanco", "Triple Sec", "Triple Sec", "Jose Cuervo Tradicional", "Jose Cuervo Tradicional", "Tito's", "Well Vodka", "( i.e. Finlandia or Sky )", "Call Vodka", "( i.e. Kettle One or Grey Goose )"]);
   let bottomRowW4M = new Item("W4MSRBR", "Speed Rack Bottom Row", ["Jack Daniels", "Bombay Gin", "Zero Ritual Tequila Alt.", "Cointreau", "El Jimador", "Herradura Silver", "1800 Anejo", "Santo Blanco", "Fletcha Azul", "Tanteo Jalapeno", "Tanteo Habanero", "Tanteo Chipotle", "Ghost Infused", "Bacardi"]);
 
@@ -116,6 +122,12 @@ class Item{
     storageCabinetSWO,
     
     // Well 400 Main
+    toolsW4M,
+    leftSideMixersW4M,
+    rightSideMixersW4M,
+    pureesW4M,
+    muddleGarnishW4M,
+    limesW4M,
     topRowW4M,
     bottomRowW4M
 

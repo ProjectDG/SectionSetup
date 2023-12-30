@@ -70,6 +70,57 @@ class Item{
   let topRowW4M = new Item("W4MSRTR", "Speed Rack Top Row", ["Rocco Mango Batch", "Hornitos Anejo", "Dos Hombres Joven", "J. F. Hayden Citrus", " Teremana Blanco", "Triple Sec", "Triple Sec", "Jose Cuervo Tradicional", "Jose Cuervo Tradicional", "Tito's", "Well Vodka", "( i.e. Finlandia or Sky )", "Call Vodka", "( i.e. Kettle One or Grey Goose )"]);
   let bottomRowW4M = new Item("W4MSRBR", "Speed Rack Bottom Row", ["Jack Daniels", "Bombay Gin", "Zero Ritual Tequila Alt.", "Cointreau", "El Jimador", "Herradura Silver", "1800 Anejo", "Santo Blanco", "Fletcha Azul", "Tanteo Jalapeno", "Tanteo Habanero", "Tanteo Chipotle", "Ghost Infused", "Bacardi"]);
 
+  // 400 Well Side Station ------------------------------------------------------------------------------------------------------------------------------------------------
+  let glassRimmerW4SS = new Item("W4SSGR", "Glass Rimmer", ["Lime Juice", "Salt", "Sugar", "Hibiscus Salt", "Tajin"]);
+  let lemonsOrangesW4SS = new Item("W4SSLO", "Lemons & Oranges", ["Useful for making sangrias and drink garnishes."]);
+  let dryGarnishW4SS = new Item("W4SSDG", "Dry Garnish", ["Dehydrated Lime Wheels", "Dehydrated Pineapple Wedges / Chile Peppers", "Rose Buds", "Coconut Powder"]);
+  let sidePlatesW4SS = new Item("W4SSSP", "Side Plates", ["Side plates & silverware should be placed in front each guest that plans on eating."]);
+  let silverwareW4SS = new Item("W4SSS", "Silverware", ["Side plates & silverware should be placed in front each guest that plans on eating."]);
+
+  // 500 Well Main ------------------------------------------------------------------------------------------------------------------------------------------------
+  let toolsW5M = new Item("W5MAMT", "Tools & etc.", ["Agave", "Coconut Purée", "Strainers", "Muddler", "Stir Spoon", "Peeler", "Alt. Mixers"]);
+  let leftSideMixersW5M = new Item("W5MLSM", "Left Side Mixers", ["Simple Syrup", "Orange Juice", "Cranberry Juice"]);
+  let rightSideMixersW5M = new Item("W5MRSM", "Right Side Mixers", ["Sour Mix", "Lime Juice", "Rocco's Lime Mix"]);
+  let topRowW5M = new Item("W5MSRTR", "Speed Rack Top Row", ["Rocco Mango Batch", "Hornitos Anejo", "Dos Hombres Joven", "J. F. Hayden Citrus", " Teremana Blanco", "Triple Sec", "Triple Sec", "Jose Cuervo Tradicional", "Jose Cuervo Tradicional", "Tito's", "Well Vodka", "( i.e. Finlandia or Sky )", "Call Vodka", "( i.e. Kettle One or Grey Goose )"]);
+  let bottomRowW5M = new Item("W5MSRBR", "Speed Rack Bottom Row", ["Jack Daniels", "Bombay Gin", "Zero Ritual Tequila Alt.", "Cointreau", "El Jimador", "Herradura Silver", "1800 Anejo", "Santo Blanco", "Fletcha Azul", "Tanteo Jalapeno", "Tanteo Habanero", "Tanteo Chipotle", "Ghost Infused", "Bacardi"]);
+  let mainMixerW5M = new Item("W5MMMT", "Main Mixer & Tools", ["Used for mixing most of the drinks ordered.", "Jiggers must be used when preparing all menu drinks to ensure accuracy."]);
+
+  // 500 Well Left Side ------------------------------------------------------------------------------------------------------------------------------------------------
+  let mixersW5LS = new Item("W5LSTM", "Tonics & Mixers", ["Classic Tonic", "Tiki Tonic", "Ginger Beer", "Ginger Ale", "Pineapple Juice"]);
+  let pureesW5LS = new Item("W5LSP", "Side Well", ["Strawberry", "Mango", "Black Cherry", "Prickly Pear", "Passion Fruit", "Watermelon", "Pomegranate", "Grenadine", "Olive Juice", "Bloody Mary Mix"]);
+
+  // 500 Well Right Side ------------------------------------------------------------------------------------------------------------------------------------------------
+  let glassRimmerW5RS = new Item("W5RSGR", "Glass Rimmer", ["Lime Juice", "Salt", "Sugar", "Hibiscus Salt", "Tajin"]);
+  let limesW5RS = new Item("W5RSL", "Limes", ["Make sure limes are fresh and rotated when necessary."]);
+  let dryGarnishW5RS = new Item("W5RSDG", "Dry Garnish", ["Dehydrated Lime Wheels", "Dehydrated Pineapple Wedges", "Chile Peppers", "Rose Buds", "Coconut Powder", "Cherries"]);
+  let sideRimW5RS = new Item("W5RSSR", "Side Rims", ["Black Salt", "Other side rims such as jalapeno salt can be set up where space permits."]);
+  let grandMarnierW5RS = new Item("W5RSGM", "Grand Marnier", ["Grand Marnier is used in our Cadillac Margarita and should be readily available."]);
+  let extraGarnishW5RS = new Item("W5RSEG", "Extra Garnish", ["Jalapenos", "- jalapenos get used quite often and should be kept close by. -", "Whole Orange", "- Some drinks require an orange peel as a garnish. such as the Old Fashioned -"]);
+
+  // 500 Well Garnish ------------------------------------------------------------------------------------------------------------------------------------------------
+  let topRowW5G = new Item("W5GGTR", "Top Row", ["Basil", "Strawberries", "Lemons", "Watermelons", "Rosemary"]);
+  let bottomRowW5G = new Item("W5GGBR", "Bottom Row", ["Mint", "Blueberries", "Oranges", "Peeled Cucumbers", "Olives"]);
+  let platesSilverwareW5G = new Item("W5GPS", "Plates & Silverware", ["Side plates & silverware should be placed in front each guest that plans on eating."]);
+
+  // 700 Well Main ------------------------------------------------------------------------------------------------------------------------------------------------
+  let glassRimmerW7M = new Item("W7MGR", "Glass Rimmer", ["Lime Juice", "Salt", "Sugar", "Hibiscus Salt", "Tajin"]);
+  let limesW7M = new Item("W7ML", "Limes", ["Make sure limes are fresh and rotated when necessary."]);
+  let dryGarnishW7M = new Item("W7MDG", "Dry Garnish", ["Dehydrated Lime Wheels", "Dehydrated Pineapple Wedges / Chile Peppers", "Rose Buds", "Coconut Powder"]);
+  let sideRimGrandMarnierW7M = new Item("W7MSRGM", "Side Rim & Grand Marnier", ["Black Salt", "- Other side rims such as jalapeno salt can be set up where space permits.", "- Grand Marnier is used in our Cadillac Margarita and should be readily available."]);
+  let toolsW7M = new Item("W7MAMT", "Tools & etc.", ["Strainers", "Muddler", "Stir Spoon", "Peeler", "Alt. Mixers"]);
+  let muddleGarnishW7M = new Item("W7MMG", "Muddle Garnish", ["Oranges", "Lemons","Basil", "Strawberries", "Mint", "Jalapenos"]);
+  let mainMixerW7M = new Item("W7MMM", "Main Mixer & Tools", ["Used for mixing most of the drinks ordered.", "Jiggers must be used when preparing all menu drinks to ensure accuracy."]);
+  let rightSideMixersW7M = new Item("W7MRSM", "Right Side Mixers", ["Sour Mix", "Lime Juice", "Rocco's Lime Mix"]);
+
+  // 700 Well Left Station --------------------------------------------------------------------------------------------------------------------------------------------
+  let mixersW7LS = new Item("W7LSTM", "Tonics & Mixers", ["Classic Tonic", "Tiki Tonic", "Ginger Beer", "Ginger Ale", "Pineapple Juice"]);
+  let pureesW7LS = new Item("W7LSP", "Side Well", ["Strawberry", "Mango", "Black Cherry", "Prickly Pear", "Passion Fruit", "Watermelon", "Pomegranate", "Grenadine", "Olive Juice", "Bloody Mary Mix"]);
+  let leftSideMixersW7LS = new Item("W7LSLSM", "Left Side Mixers", ["Simple Syrup", "Orange Juice", "Cranberry Juice"]);
+
+
+
+
+
   itemList = [
     // Servie Well Printer
     sangriaBatchesSWP,
@@ -129,7 +180,49 @@ class Item{
     muddleGarnishW4M,
     limesW4M,
     topRowW4M,
-    bottomRowW4M
+    bottomRowW4M,
+
+    // Well 400 Side Station
+    glassRimmerW4SS,
+    lemonsOrangesW4SS,
+    dryGarnishW4SS,
+    sidePlatesW4SS,
+    silverwareW4SS,
+
+    // Well 500 Main
+    toolsW5M,
+    leftSideMixersW5M,
+    rightSideMixersW5M,
+    topRowW5M,
+    bottomRowW5M,
+    mainMixerW5M,
+
+    // Well 500 Left Side
+    mixersW5LS,
+    pureesW5LS,
+    glassRimmerW5RS,
+    limesW5RS,
+    dryGarnishW5RS,
+    sideRimW5RS,
+    grandMarnierW5RS,
+    extraGarnishW5RS,
+    topRowW5G,
+    bottomRowW5G,
+    platesSilverwareW5G,
+
+    // Well 700 Main
+    glassRimmerW7M,
+    limesW7M,
+    dryGarnishW7M,
+    sideRimGrandMarnierW7M,
+    toolsW7M,
+    muddleGarnishW7M,
+    mainMixerW7M,
+    rightSideMixersW7M,
+    mixersW7LS,
+    pureesW7LS,
+    leftSideMixersW7LS
+
 
   ];
 

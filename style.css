@@ -47,6 +47,7 @@ body {
     #rotateScreenIcon,
     h1,
     #dropDownMenu,
+    #batchRecipesDiv,
     .setup-images,
     .image-numbers
     {
@@ -610,6 +611,21 @@ body {
 
 
 
+    #batchRecipesDiv{
+      border: 4px solid rgb(23, 23, 23);
+      background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+      box-shadow: 1px 1px 30px rgb(0, 0, 0, .5), 1px 1px 30px rgb(0, 0, 0, .5), 1px 1px 30px rgb(0, 0, 0, .5), 1px 1px 30px rgb(0, 0, 0, .5);
+      border-radius: 4%;
+      width: 50%;
+      height: fit-content;
+      padding: 6% 0;
+      font-size: 1.5em;
+      overflow: scroll;
+      overflow-x: hidden;
+      list-style: none;
+    }
+
+
 
 /* The Modal (background) */
 .modal {
@@ -692,6 +708,15 @@ body {
 
 
 @media screen and (orientation:landscape) and (max-width: 830px) {
+  #rotateScreenIcon,
+  h1,
+  #dropDownMenu,
+  #batchRecipesDiv,
+  .setup-images,
+  .image-numbers
+  {
+  display: none;
+  }
 
   .close {
     font-size: 20px;
@@ -1182,6 +1207,9 @@ body{
   justify-content: center;
 }
 
+li,
+#modalTitle,
+#batchRecipesDiv,
 .topnav,
 .photo-containers,
 .setup-images,

@@ -9,7 +9,7 @@ class Item{
 
   // Service Well ---------------------------------------------------------------------------------------------------------------------------------------------
   // Service Well Printer
-  let sangriaBatchesSWP = new Item("SWPSB", "Sangria Batches", ["Red Sangria Batch", "White Sangria Batch", "Rosé Sangria Batch"]);
+  let sangriaBatchesSWP = new Item("SWPSB", "Sangria Batches", ["Red Sangria Batch", "Equal parts:", "E & J Brandy / Blackberry Brandy", "-----------------------------------------------", "White Sangria Batch", "Equal parts:", "- E & J Brandy / Amaretto", "-----------------------------------------------", "Rosé Sangria Batch", "Equal parts:", "E & J Brandy / Peach Schnapps"]);
   let syrupsSWP = new Item("SWPS", "Syrups", ["Grenadine", "Pomegranate", "Watermelon"]);
   let glassRimmerSWP = new Item("SWPGR", "Glass Rimmer", ["Lime Juice", "Salt", "Sugar", "Hibiscus Salt", "Tajin"]);
   let sideRimBittersSWP = new Item("SWPSRB", "Side Rim & Bitters", ["Black Salt", "Classic Bitters", "Chocolate Bitters", "Orange Bitters"]);
@@ -269,6 +269,10 @@ window.onclick = function(event) {
     var well400Section = document.getElementById("menuItem9");
     var well500Section = document.getElementById("menuItem12");
     var well700Section = document.getElementById("menuItem17");
+    var batchRecipes = document.getElementById("menuItem20");
+
+
+
     if (event.target == serviceWellSection) {
       dropDownMenu.style.display = "block";
     };
@@ -282,6 +286,10 @@ window.onclick = function(event) {
     };
 
     if (event.target == well700Section) {
+      dropDownMenu.style.display = "block";
+    };
+
+    if (event.target == batchRecipes) {
       dropDownMenu.style.display = "block";
     };
 
@@ -310,6 +318,7 @@ $(document).ready(function(){
     $(".well-400-items").hide();
     $(".well-500-items").hide();
     $(".well-700-items").hide();
+    $(".batch-recipes").hide();
   });
 
   
@@ -445,12 +454,44 @@ $(document).ready(function(){
     mainTitle.innerText = selectedSection;
   });
 
+  $("#menuItem20").on('click', function(){
+    dropDownMenu.style.display = "block";
+    $(".batch-recipes").toggle();
+  });
+
+  $("#sangriaBR").on('click', function(){
+    $(".photo-containers").hide();
+    $("#batchRecipesDiv").show(500);
+    mainTitle.innerText = "Batch Recipes";
+
+    let target = document.getElementById("batchRecipesDiv");
+
+    console.log(this.innerText)
+    itemList.map(x => {
+      if(this.innerText === x["name"]){
+        // Sets Modal Title
+ 
+
+        let modalList = document.getElementById("batchRecipesDiv");
+    
+        //console.log(x["contents"]);
+        if(x.contents !== null){
+          x.contents.map(i => {
+            let li = document.createElement('li');
+            li.innerText = i;
+            modalList.append(li);
+          });
+        }
+      }
+    });
+  });
+
 
 
   // When the user clicks the button, open the modal
   $('body').on('click','.image-numbers', function(){
     modal.style.display = "flex";
-
+  
     // Resets Modal List
     $("#modalList").empty();
     $("#modalTitle").empty();

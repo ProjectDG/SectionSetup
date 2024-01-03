@@ -42,6 +42,7 @@ body {
     background-size: 105% 120%;
     display: block;
   }  
+  
 
 @media screen and (orientation:landscape) and (max-width: 4000px) {
     #rotateScreenIcon,
@@ -49,6 +50,7 @@ body {
     #dropDownMenu,
     #batchRecipesDiv,
     .setup-images,
+    .portrait-buttons,
     .image-numbers
     {
     display: none;
@@ -714,6 +716,7 @@ body {
   #dropDownMenu,
   #batchRecipesDiv,
   .setup-images,
+  .portrait-buttons,
   .image-numbers
   {
   display: none;
@@ -1251,11 +1254,26 @@ img[src="./images/logo.png"]{
   padding: 8%;
 }
 
+.portrait-buttons{
+  border: 4px outset rgb(122, 113, 113);
+  width: 35vw;
+  height: 8vh;
+  font-size: 2vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2vw;
+  justify-content: center;
+  padding: 0 6%;
+} 
+
 h1{
     display: grid;
     justify-content: center;
     height: auto;
-    font-size: 3.7vh;
+    font-size: 2.75vh;
     font-family: monospace;
     padding: 5% 10%;
     font-weight: 400;

@@ -268,8 +268,8 @@ window.onclick = function(event) {
     var serviceWellSection = document.getElementById("menuItem1");
     var well400Section = document.getElementById("menuItem9");
     var well500Section = document.getElementById("menuItem12");
-    var well700Section = document.getElementById("menuItem17");
-    var batchRecipes = document.getElementById("menuItem20");
+    var well700Section = document.getElementById("menuItem18");
+    var batchRecipes = document.getElementById("menuItem21");
 
 
 
@@ -312,7 +312,7 @@ $(document).ready(function(){
   $(".service-well-printer").show();
 
 
-  $('body').on('click','#icon', function(){
+  $('body').on('click','#icon','#iconActual', function(){
     $("#dropDownMenu").toggle();
     $(".service-well-items").hide();
     $(".well-400-items").hide();
@@ -345,6 +345,7 @@ $(document).ready(function(){
   });
 
   $("#menuItem3").on('click', function(){
+    $(".photo-containers").show();
     $("#serviceWellMain").show(400);
     $(".service-well-main").show(500);
     selectedSection = document.getElementById("serviceWellPrinter").alt;
@@ -352,6 +353,7 @@ $(document).ready(function(){
   });
 
   $("#menuItem4").on('click', function(){
+    $(".photo-containers").show();
     $("#serviceWellTopRackLeft").show(400);
     $(".service-well-top-rack-left").show(500);
     selectedSection = document.getElementById("serviceWellPrinter").alt;
@@ -359,6 +361,7 @@ $(document).ready(function(){
   });
 
   $("#menuItem5").on('click', function(){
+    $(".photo-containers").show();
     $("#serviceWellTopRackRight").show(400);
     $(".service-well-top-rack-right").show(500);
     selectedSection = document.getElementById("serviceWellPrinter").alt;
@@ -366,6 +369,7 @@ $(document).ready(function(){
   });
 
   $("#menuItem6").on('click', function(){
+    $(".photo-containers").show();
     $("#serviceWellFruit").show(400);
     $(".service-well-fruit").show(500);
     selectedSection = document.getElementById("serviceWellPrinter").alt;
@@ -373,6 +377,7 @@ $(document).ready(function(){
   });
   
   $("#menuItem7").on('click', function(){
+    $(".photo-containers").show();
     $("#serviceWellServerGarnish").show(400);
     $(".service-well-server-garnish").show(500);
     selectedSection = document.getElementById("serviceWellPrinter").alt;
@@ -380,6 +385,7 @@ $(document).ready(function(){
   });
 
   $("#menuItem8").on('click', function(){
+    $(".photo-containers").show();
     $("#serviceWellOverstock").show(400);
     $(".service-well-overstock").show(500);
     selectedSection = document.getElementById("serviceWellPrinter").alt;
@@ -392,6 +398,7 @@ $(document).ready(function(){
   });
 
   $("#menuItem10").on('click', function(){
+    $(".photo-containers").show();
     $("#well400Main").show(400);
     $(".well-400-main").show(500);
     selectedSection = document.getElementById("well400Main").alt;
@@ -399,6 +406,7 @@ $(document).ready(function(){
   });
 
   $("#menuItem11").on('click', function(){
+    $(".photo-containers").show();
     $("#well400SideStation").show(400);
     $(".well-400-side-station").show(500);
     selectedSection = document.getElementById("well400Main").alt;
@@ -411,6 +419,7 @@ $(document).ready(function(){
   });
   
   $("#menuItem13").on('click', function(){
+    $(".photo-containers").show();
     $("#well500Main").show(400);
     $(".well-500-main").show(500);
     selectedSection = document.getElementById("well500Main").alt;
@@ -418,6 +427,7 @@ $(document).ready(function(){
   });
   
   $("#menuItem14").on('click', function(){
+    $(".photo-containers").show();
     $("#well500LeftSide").show(400);
     $(".well-500-left-side").show(500);
     selectedSection = document.getElementById("well500LeftSide").alt;
@@ -425,6 +435,7 @@ $(document).ready(function(){
   });
   
   $("#menuItem15").on('click', function(){
+    $(".photo-containers").show();
     $("#well500RightSide").show(400);
     $(".well-500-right-side").show(500);
     selectedSection = document.getElementById("well500RightSide").alt;
@@ -432,6 +443,7 @@ $(document).ready(function(){
   });
   
   $("#menuItem16").on('click', function(){
+    $(".photo-containers").show();
     $("#well500Garnish").show(400);
     $(".well-500-garnish").show(500);
     selectedSection = document.getElementById("well500Garnish").alt;
@@ -439,6 +451,7 @@ $(document).ready(function(){
   });
 
   $("#menuItem17").on('click', function(){
+    $(".photo-containers").show();
     $("#well500Overstock").show(400);
     $(".well-500-overstock").show(500);
     selectedSection = document.getElementById("well500Overstock").alt;
@@ -451,6 +464,7 @@ $(document).ready(function(){
   });
 
   $("#menuItem19").on('click', function(){
+    $(".photo-containers").show();
     $("#well700Main").show(400);
     $(".well-700-main").show(500);
     selectedSection = document.getElementById("well700Main").alt;
@@ -458,6 +472,7 @@ $(document).ready(function(){
   });
 
   $("#menuItem20").on('click', function(){
+    $(".photo-containers").show();
     $("#well700LeftStation").show(400);
     $(".well-700-left-station").show(500);
     selectedSection = document.getElementById("well700LeftStation").alt;

@@ -153,6 +153,7 @@ body {
     }
 
     #serviceWellMain,
+    #well500Overstock,
     #serviceWellTopRackRight,
     #well500Main
     {
@@ -621,7 +622,7 @@ body {
       padding: 6% 0;
       font-size: 1.5em;
       overflow: scroll;
-      overflow-x: hidden;
+      overflow-y: hidden;
       list-style: none;
     }
 
@@ -733,6 +734,7 @@ body {
   }
 
   #serviceWellMain,
+  #well500Overstock,
   #serviceWellTopRackRight,
   #well500Main
   {

@@ -326,6 +326,8 @@ $(document).ready(function(){
     $("#dropDownMenu").toggle();
     $(".setup-images").hide(400);
     $(".image-numbers").hide(400);
+    $("#batchRecipesDiv").hide();
+    $("#batchRecipesDiv").empty();
   });
   
 
@@ -335,6 +337,7 @@ $(document).ready(function(){
   });
 
   $("#menuItem2").on('click', function(){
+    $(".photo-containers").show();
     $("#serviceWellPrinter").show(400);
     $(".service-well-printer").show(500);
     selectedSection = document.getElementById("serviceWellPrinter").alt;
@@ -436,32 +439,39 @@ $(document).ready(function(){
   });
 
   $("#menuItem17").on('click', function(){
+    $("#well500Overstock").show(400);
+    $(".well-500-overstock").show(500);
+    selectedSection = document.getElementById("well500Overstock").alt;
+    mainTitle.innerText = selectedSection;
+  });
+
+  $("#menuItem18").on('click', function(){
     dropDownMenu.style.display = "block";
     $(".well-700-items").toggle();
   });
 
-  $("#menuItem18").on('click', function(){
+  $("#menuItem19").on('click', function(){
     $("#well700Main").show(400);
     $(".well-700-main").show(500);
     selectedSection = document.getElementById("well700Main").alt;
     mainTitle.innerText = selectedSection;
   });
 
-  $("#menuItem19").on('click', function(){
+  $("#menuItem20").on('click', function(){
     $("#well700LeftStation").show(400);
     $(".well-700-left-station").show(500);
     selectedSection = document.getElementById("well700LeftStation").alt;
     mainTitle.innerText = selectedSection;
   });
 
-  $("#menuItem20").on('click', function(){
+  $("#menuItem21").on('click', function(){
     dropDownMenu.style.display = "block";
     $(".batch-recipes").toggle();
   });
 
   $("#sangriaBR").on('click', function(){
     $(".photo-containers").hide();
-    $("#batchRecipesDiv").show(500);
+    $("#batchRecipesDiv").show(300);
     mainTitle.innerText = "Batch Recipes";
 
     let target = document.getElementById("batchRecipesDiv");
@@ -469,12 +479,8 @@ $(document).ready(function(){
     console.log(this.innerText)
     itemList.map(x => {
       if(this.innerText === x["name"]){
-        // Sets Modal Title
- 
-
         let modalList = document.getElementById("batchRecipesDiv");
     
-        //console.log(x["contents"]);
         if(x.contents !== null){
           x.contents.map(i => {
             let li = document.createElement('li');

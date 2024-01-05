@@ -102,6 +102,11 @@ class Item{
   let bottomRowW5G = new Item("W5GGBR", "Bottom Row", ["Mint", "Blueberries", "Oranges", "Peeled Cucumbers", "Olives"]);
   let platesSilverwareW5G = new Item("W5GPS", "Plates & Silverware", ["Side plates & silverware should be placed in front each guest that plans on eating."]);
 
+  // 500 Well Overstock ------------------------------------------------------------------------------------------------------------------------------------------------
+  let joseCuervoW5O = new Item("W5OJCT", "Jose Cuervo Tradicional", ["2 Rows", "----------------------", "12 Bottles Total"]);
+  let tripleSecW5O = new Item("W5OTS", "Triple Sec", ["2 Rows", "----------------------", "12 Bottles Total"]);
+  let tanteoJalapenoW5O = new Item("W5OTJ", "Tanteo Jalapeno", ["1 Row", "----------------------", "6 Bottles Total"]);
+
   // 700 Well Main ------------------------------------------------------------------------------------------------------------------------------------------------
   let glassRimmerW7M = new Item("W7MGR", "Glass Rimmer", ["Lime Juice", "Salt", "Sugar", "Hibiscus Salt", "Tajin"]);
   let limesW7M = new Item("W7ML", "Limes", ["Make sure limes are fresh and rotated when necessary."]);
@@ -116,6 +121,13 @@ class Item{
   let mixersW7LS = new Item("W7LSTM", "Tonics & Mixers", ["Classic Tonic", "Tiki Tonic", "Ginger Beer", "Ginger Ale", "Pineapple Juice"]);
   let pureesW7LS = new Item("W7LSP", "Side Well", ["Strawberry", "Mango", "Black Cherry", "Prickly Pear", "Passion Fruit", "Watermelon", "Pomegranate", "Grenadine", "Olive Juice", "Bloody Mary Mix"]);
   let leftSideMixersW7LS = new Item("W7LSLSM", "Left Side Mixers", ["Simple Syrup", "Orange Juice", "Cranberry Juice"]);
+
+  // 700 Well Overstock ------------------------------------------------------------------------------------------------------------------------------------------------
+  let ghostInfusedW7O = new Item("W5OGI", "Ghost Infused", ["1 Row", "----------------------", "6 Bottles Total"]);
+  let teremanaW7O = new Item("W5OT", "Teremana", ["1 Row", "----------------------", "6 Bottles Total"]);
+  let wellVodkaW7O = new Item("W5OWV", "Well Vodka", ["1 Row", "----------------------", "7 Bottles Total"]);
+  let herraduraSilverW7O = new Item("W5OHS", "Herradura Silver", ["1 Row", "----------------------", "5 Bottles Total"]);
+  let elJimadorW7O = new Item("W5OEJ", "El Jimador", ["1 Row", "----------------------", "6 Bottles Total"]);
 
 
 
@@ -210,6 +222,11 @@ class Item{
     bottomRowW5G,
     platesSilverwareW5G,
 
+    // Well 500 Overstock
+    joseCuervoW5O,
+    tripleSecW5O,
+    tanteoJalapenoW5O,
+
     // Well 700 Main
     glassRimmerW7M,
     limesW7M,
@@ -221,7 +238,14 @@ class Item{
     rightSideMixersW7M,
     mixersW7LS,
     pureesW7LS,
-    leftSideMixersW7LS
+    leftSideMixersW7LS,
+
+    // Well 700 Overstock
+    ghostInfusedW7O,
+    teremanaW7O,
+    wellVodkaW7O,
+    herraduraSilverW7O,
+    elJimadorW7O
 
 
   ];
@@ -269,7 +293,7 @@ window.onclick = function(event) {
     var well400Section = document.getElementById("menuItem9");
     var well500Section = document.getElementById("menuItem12");
     var well700Section = document.getElementById("menuItem18");
-    var batchRecipes = document.getElementById("menuItem21");
+    var batchRecipes = document.getElementById("menuItem22");
 
 
 
@@ -480,18 +504,24 @@ $(document).ready(function(){
   });
 
   $("#menuItem21").on('click', function(){
+    $(".photo-containers").show();
+    $("#well700Overstock").show(400);
+    $(".well-700-overstock").show(500);
+    selectedSection = document.getElementById("well700Overstock").alt;
+    mainTitle.innerText = selectedSection;
+  });
+
+  $("#menuItem22").on('click', function(){
     dropDownMenu.style.display = "block";
     $(".batch-recipes").toggle();
   });
+  
 
   $("#sangriaBR").on('click', function(){
     $(".photo-containers").hide();
     $("#batchRecipesDiv").show(300);
     mainTitle.innerText = "Batch Recipes";
-
-    let target = document.getElementById("batchRecipesDiv");
-
-    console.log(this.innerText)
+    
     itemList.map(x => {
       if(this.innerText === x["name"]){
         let modalList = document.getElementById("batchRecipesDiv");

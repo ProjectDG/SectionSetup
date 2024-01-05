@@ -9,7 +9,7 @@ class Item{
 
   // Service Well ---------------------------------------------------------------------------------------------------------------------------------------------
   // Service Well Printer
-  let sangriaBatchesSWP = new Item("SWPSB", "Sangria Batches", ["Red Sangria Batch", "Equal parts:", "E & J Brandy / Blackberry Brandy", "-----------------------------------------------", "White Sangria Batch", "Equal parts:", "- E & J Brandy / Amaretto", "-----------------------------------------------", "Rosé Sangria Batch", "Equal parts:", "E & J Brandy / Peach Schnapps"]);
+  let sangriaBatchesSWP = new Item("SWPSB", "Sangria", ["Red Sangria Batch", "Equal parts:", "E & J Brandy / Blackberry Brandy", "-----------------------------------------------", "White Sangria Batch", "Equal parts:", "- E & J Brandy / Amaretto", "-----------------------------------------------", "Rosé Sangria Batch", "Equal parts:", "E & J Brandy / Peach Schnapps"]);
   let syrupsSWP = new Item("SWPS", "Syrups", ["Grenadine", "Pomegranate", "Watermelon"]);
   let glassRimmerSWP = new Item("SWPGR", "Glass Rimmer", ["Lime Juice", "Salt", "Sugar", "Hibiscus Salt", "Tajin"]);
   let sideRimBittersSWP = new Item("SWPSRB", "Side Rim & Bitters", ["Black Salt", "Classic Bitters", "Chocolate Bitters", "Orange Bitters"]);
@@ -131,6 +131,13 @@ class Item{
 
 
 
+  // Batch Recipes ------------------------------------------------------------------------------------------------------------------------------------------------------
+  let houseMargaritaBR = new Item("HMBR", "House Margarita", ["House Margarita Batch", "--------------------------------------------------", "Coming Soon..."]);
+  let roccoLimeBR = new Item("RLBR", "Rocco Lime", ["Rocco Lime Batch", "--------------------------------------------------", "Coming Soon..."]);
+  let roccoMangoBR = new Item("RMBR", "Rocco Mango", ["Rocco Mango Batch", "--------------------------------------------------", "Jose Cuervo Tradicional Silver:", "750ml", "--------------------------------------------------", "Rock & Roll Mango Tequila:", "750ml", "--------------------------------------------------", "J.F. Hayden's Mango Liqueur:", "750ml"]);
+  let sourMixBR = new Item("SMBR", "Sour Mix", ["Sour Mix Batch", "--------------------------------------------------", "- Use 22 liter container", "- Add 2 gallons of sour mix", "- Mix 1 Tablespoon of Aqua Faba with 8oz of water", "- Add Aqua Faba Mix", "- Stir until dissolved"]);
+
+
 
 
   itemList = [
@@ -245,8 +252,14 @@ class Item{
     teremanaW7O,
     wellVodkaW7O,
     herraduraSilverW7O,
-    elJimadorW7O
+    elJimadorW7O,
 
+
+    // Batch Recipes
+    houseMargaritaBR,
+    roccoLimeBR,
+    roccoMangoBR,
+    sourMixBR
 
   ];
 
@@ -517,7 +530,7 @@ $(document).ready(function(){
   });
   
 
-  $("#sangriaBR").on('click', function(){
+  $(".batch-recipes").on('click', function(){
     $(".photo-containers").hide();
     $("#batchRecipesDiv").show(300);
     mainTitle.innerText = "Batch Recipes";
